@@ -19,7 +19,7 @@ class CardContainer extends React.Component {
         }];
 
         const cardItems = cards.map(
-            card => <Card key={card.id} img={card.img} alt={card.imgalt} productName={card.productname} price={card.price} desc={card.desc} />
+            card => <Card key = {card.id} {...card}/>
         );
         return (
             <div>{cardItems}</div>
